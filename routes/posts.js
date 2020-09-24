@@ -64,7 +64,7 @@ module.exports = {
           id: found.id,
           title: request.body.title,
           order: found.order,
-          completed: request.body.completed,
+          completed: request.body.completed ? request.body.completed : false,
           createdOn: found.createdOn,
         };
 
